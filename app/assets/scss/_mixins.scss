@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@mixin respond-to($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-gutter;
+  padding-right: $container-gutter;
+}

@@ -65,9 +65,14 @@ const formattedPriceSecondary = computed(() =>
 
   &__image {
     width: 100%;
-    max-height: 100px;
+    height: 93px;
+    max-height: 180px;
     object-fit: cover;
     display: block;
+
+    @include respond-to($breakpoint-lg) {
+      height: 180px;
+    }
   }
 
   &__favorite {

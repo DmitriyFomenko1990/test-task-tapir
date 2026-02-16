@@ -18,6 +18,7 @@
           <p class="catalog__error-text">Произошла ошибка, попробуйте позже</p>
           <TheButton
             @click="status === 'error' ? refresh() : fetchNextPage()"
+            variant="outline"
           >
             Повторить
           </TheButton>
@@ -52,15 +53,24 @@ const {
 
 <style lang="scss" scoped>
 .catalog {
-  padding: 100px 0;
+  padding: 20px 0 40px;
+
+  @include respond-to($breakpoint-lg) {
+    padding: 100px 0;
+  }
 
   &__title {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.1;
-    margin: 0 0 100px;
+    margin: 0 0 40px;
     text-transform: uppercase;
     text-align: center;
+
+    @include respond-to($breakpoint-lg) {
+      font-size: 42px;
+      margin: 0 0 100px;
+    }
   }
 
   &__list {
@@ -69,10 +79,11 @@ const {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
 
     @include respond-to($breakpoint-lg) {
       grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
     }
   }
 
@@ -81,8 +92,12 @@ const {
   }
 
   &__more {
-    margin-top: 110px;
+    margin-top: 40px;
     text-align: center;
+
+    @include respond-to($breakpoint-lg) {
+      margin-top: 110px;
+    }
   }
 
   &__loading {
@@ -95,9 +110,8 @@ const {
     text-align: center;
 
     .catalog__error-text {
-      margin: 0 0 $spacing-unit * 2;
+      margin: 0 0 30px;
       font-size: $font-size-base;
-      color: $color-text-muted;
     }
   }
 }

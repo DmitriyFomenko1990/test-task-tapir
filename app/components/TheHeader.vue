@@ -62,7 +62,7 @@
     padding: 0;
     border: none;
     border-radius: 50%;
-    background-color: $color-bg-header;
+    background: none;
     cursor: pointer;
 
     @include respond-to($breakpoint-lg) {

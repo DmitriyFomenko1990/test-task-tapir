@@ -5,5 +5,6 @@
     <main class="page__main">
       <NuxtPage />
     </main>
+    <TheFooter />
   </div>
 </template>

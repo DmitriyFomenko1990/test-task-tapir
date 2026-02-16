@@ -47,4 +47,11 @@ a {
 
 .container {
   @include container;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include respond-to($breakpoint-lg) {
+    padding-left: $container-gutter;
+    padding-right: $container-gutter;
+  }
 }

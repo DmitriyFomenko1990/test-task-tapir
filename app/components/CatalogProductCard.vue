@@ -48,7 +48,7 @@ const formattedPriceSecondary = computed(() =>
   transition: transform 0.2s ease;
 
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
   }
 
   &__link {
@@ -93,7 +93,7 @@ const formattedPriceSecondary = computed(() =>
     transition: transform 0.2s ease;
 
     &:hover {
-      transform: scale(1.15);
+      transform: scale(1.05);
     }
   }
 

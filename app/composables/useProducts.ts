@@ -1,6 +1,6 @@
 import type { Product, ProductsResponse } from '~/types/product'
 
-const DEFAULT_LIMIT = 12
+const DEFAULT_LIMIT = 10
 
 export function useProducts() {
   const config = useRuntimeConfig()
@@ -62,8 +62,6 @@ export function useProducts() {
 
   return {
     products,
-    currentPage,
-    totalPages,
     hasNextPage,
     error: initialError,
     status,

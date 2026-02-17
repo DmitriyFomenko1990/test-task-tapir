@@ -16,10 +16,9 @@ withDefaults(
 <style lang="scss" scoped>
 .button {
   padding: 10px 24px;
-  font-family: $font-family-base;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   letter-spacing: 0;
   color: $color-bg;
   background-color: $color-accent;

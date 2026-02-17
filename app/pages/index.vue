@@ -33,7 +33,6 @@
 
   &__title {
     margin: 0;
-    font-family: $font-family-base;
     font-weight: 500;
     font-size: 26px;
     line-height: 110%;

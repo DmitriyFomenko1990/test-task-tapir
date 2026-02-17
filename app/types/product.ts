@@ -12,8 +12,3 @@ export interface ProductsResponse {
   limit: number
   products: Product[]
 }
-
-export interface ProductsQuery {
-  page?: number
-  limit?: number
-}
